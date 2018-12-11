@@ -50,12 +50,12 @@ In this project I propose Deep Learning to process Sparse CT projection data whi
 <!-- figure -->
 <h3>Teaser figure</h3>
 <div style="text-align: center;">
-<img style="height: 300px;" alt="Projection and Sinogram" src="Teaser.png">
+<img title="Projection and Sinogram" style="height: 300px;" alt="" src="Teaser.jpg">
 </div>
 <br><br>
 <!-- Main Illustrative Figure --> 
 <div style="text-align: center;">
-<img style="height: 320px; width= 500px" alt="3D UNET Architecture" src="architecture.png">
+<img title="UNET 3D Architecture" style="height: 320px; width= 500px" alt="" src="architecture.png">
 </div>
 
 <br><br>
@@ -74,25 +74,25 @@ Analytical interpolation currently used in Medical Imaging is prone to errors. R
 We have this facility in the X-ray Systems lab of Biomedical Engineering and Applied Mechanics Department. We have the data gathered using the Xradia for various body parts.
 There are 1500 projections at various resolutions from -90 degrees to +90 degree. The projection data is first normalized and sinograms are created. The normalized data will be used for training the neural network. We plan to minimize loss functions like root mean square error.  Once the model is trained we will test the model on sparse data which has missing projection data. The network is supposed to accurately predict the missing data. The final results will be compared with analytical interpolation methods as well as with the ground truth
 Training data was sparse up-sampled linearly interpolated sinogram as shown below.
-<div style="text-align: left;">
-<img style="height: 300px;" alt="Input of the Network" src="sparseUpsampledInput.png">
+<div style="text-align: center;">
+<img title="Input of the Network" style="height: 300px;" alt="" src="sparseUpsampledInput.png">
 </div>
-<div style="text-align: right;">
-<img style="height: 300px;" alt="Ground Truth Sinogram" src="groundTruth.png">
+<div style="text-align: center;">
+<img title="Ground Truth Sinogram" style="height: 300px;" alt="" src="groundTruth.png">
 </div>
 Validation set is as follows:-
-<div style="text-align: left;">
-<img style="height: 300px;" alt="Validation Sparse Sinogram" src="sparseValidation.bmp">
+<div style="text-align: center;">
+<img title=" Validation Sparse Sinogram" style="height: 300px;" alt="" src="sparseValidation.bmp">
 </div>
-<div style="text-align: right;">
-<img style="height: 300px;" alt="Validation Up-sampled Input " src="sparseValidationUpsampled.png">
+<div style="text-align: center;">
+<img title="Validation Up-sampled Input" style="height: 300px;" alt=" " src="sparseValidationUpsampled.png">
 </div>
 
 <br><br>
 
 <!-- Main Results Figure --> 
 <div style="text-align: center;">
-<img style="height: 300px;" alt="Output of the Network" src="results.png">
+<img title="Output of the Network" style="height: 300px;" alt="" src="results.png">
 </div>
 <br><br>
 
@@ -104,11 +104,11 @@ The loss functions L2-norm ans structural similarity behaved as follows:-
 <br><br>
 
 <!-- Main Results Figure --> 
-<div style="text-align: left;">
-<img style="height: 300px;" alt="Loss Function L2 Norm" src="Loss1_3D_L2norm.png">
+<div style="text-align: center;">
+<img title="Loss Function L2 Norm" style="height: 300px;" alt="" src="Loss1_3D_L2norm.png">
 </div>
-<div style="text-align: right;">
-<img style="height: 300px;" alt="Loss Function SSIM" src="Loss2_3D_Unet_SSIM.png">
+<div style="text-align: center;">
+<img title = "Loss Function SSIM " style="height: 300px;" alt="" src="Loss2_3D_Unet_SSIM.png">
 </div>
 <br><br>
 
@@ -120,15 +120,10 @@ I am still trying to rectify the results for UNet 3D. At the same time I am work
 <div class="container sec">
 <h2>References</h2>
 <a href="SinogramSynthesis_cho.pdf" style="font-size:18px">[1]Deep-neural-network based sinogram synthesis for sparse-view CT image reconstruction</a><br>
-
-<a href="https://arxiv.org/ftp/arxiv/papers/1803/1803.00694.pdf/">Lee</a>, <a href="SinogramSynthesisusingCNNforSparseCTReconstruction.pdf" style="font-size:18px"">Presentation</a><br>
+<a href="https://arxiv.org/ftp/arxiv/papers/1803/1803.00694.pdf/">Cho</a>, 
+<a href="SinogramSynthesisusingCNNforSparseCTReconstruction.pdf" style="font-size:18px">Class Presentation</a><br>
 
 </div>
-
-
-
-
-
   <hr>
   <footer> 
   <p>© Swapnil Vekhande</p>
